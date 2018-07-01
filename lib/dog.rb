@@ -59,7 +59,7 @@ class Dog
 
     if !new_dog.empty?
       dog_data = new_dog[0]
-      new_dog = Dog.new(dog_data[1], dog_data[2], dog_data[0])
+      new_dog = Dog.new(name:dog_data[1], breed:dog_data[2], id:dog_data[0])
     else
       new_dog = self.create(name: name, breed: breed)
     end
